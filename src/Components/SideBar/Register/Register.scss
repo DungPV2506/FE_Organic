@@ -1,0 +1,76 @@
+.register-container {
+    width: 100%;
+    .Register-From {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+        span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        input#register {
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid gainsboro;
+            padding: 10px;
+            &:focus {
+                background-color: white; /* Màu nền khi ô input được chọn */
+                outline: none; /* Xóa viền mặc định khi focus */
+                border: 1px solid black;
+            }
+        }
+        .EyesPassword {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            top: 128px;
+        }
+        .checkbox-Login {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            height: 35px;
+            background-color: rgb(2, 70, 66);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 17px;
+            font-weight: 300;
+            transition: 0.5s ease;
+            margin-top: 10px;
+            &:hover {
+                background-color: #04aa6d;
+                border: none;
+            }
+        }
+        .lable-register {
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+
+            span {
+                font-size: 17px;
+                color: #04073a;
+                font-weight: 500;
+            }
+        }
+    }
+}
+ul {
+    display: flex;
+    flex-direction: column;
+}
+li {
+    list-style: none;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    gap: 2px;
+    svg {
+        font-size: 28px;
+    }
+}

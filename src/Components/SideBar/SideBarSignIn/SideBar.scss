@@ -1,0 +1,131 @@
+.overLay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0000004d;
+    z-index: 100;
+    transition: all 0.6 ease;
+}
+.sideBar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    background-color: #fff;
+    z-index: 1000;
+
+    transform: translateX(350px);
+    transition: all 0.5s ease;
+}
+
+.slideSideBar {
+    transform: translateX(0);
+}
+
+.CloseSideBar {
+    width: 35px;
+    height: 35px;
+    background: #04aa6d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: -40px;
+    top: 5px;
+}
+
+.LayoutLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 10px;
+    width: 100vw;
+    max-width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+
+    p {
+        font-size: 40px;
+    }
+    h4 {
+        display: flex;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .signin-title {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 20px;
+
+        cursor: pointer;
+        .login {
+            &:hover {
+                color: #04aa6d;
+                transition: 0.3s ease;
+            }
+        }
+        .register {
+            &:hover {
+                color: #04aa6d;
+                transition: 0.3s ease;
+            }
+        }
+    }
+    .Login-From {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+        span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        input#login {
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid gainsboro;
+            padding: 10px;
+            &:focus {
+                background-color: white; /* Màu nền khi ô input được chọn */
+                outline: none; /* Xóa viền mặc định khi focus */
+                border: 1px solid black;
+            }
+        }
+        .EyesPassword {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+        .checkbox-Login {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            height: 35px;
+            background-color: rgb(2, 70, 66);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 17px;
+            font-weight: 300;
+            transition: 0.5s ease;
+            &:hover {
+                background-color: #04aa6d;
+                border: none;
+            }
+        }
+    }
+}

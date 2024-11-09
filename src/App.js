@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Banner from './Components/LayOut/Banner/Banner';
+import Navbar from './Components/LayOut/Navbar/Navbar';
+import Features from './Components/LayOut/Products/Features/Features';
+import FruitList from './Components/LayOut/Products/FruitList/FruitList';
+import SideBar from './Components/SideBar/SideBarSignIn/SideBar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <SideBar />
+
+            <div className='App-Organic'>
+                <Navbar />
+                <Banner />
+                <Features />
+                <FruitList />
+            </div>
+        </div>
+    );
 }
 
 export default App;
